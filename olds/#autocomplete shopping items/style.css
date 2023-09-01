@@ -1,0 +1,39 @@
+body{
+    background: blanchedalmond;
+}
+
+.container{
+    margin-top: 30px;
+    max-width: 700px;
+}
+.result_container{
+    background-color: #fff;
+}
+.auto_input{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.productCONTAINER{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9px;
+    height: 50px;
+    border-bottom: 1px solid blanchedalmond;
+}
+.productNAME{
+    font-size: 14px;
+    width: 80%;
+}
+
+.productIMAGE{
+    height: 80%;
+}
+.ans{
+    display: none;
+}
+i{
+    display: inline;
+}

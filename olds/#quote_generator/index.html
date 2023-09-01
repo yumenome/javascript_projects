@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quote_gen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Montserrat+Alternates:ital,wght@0,100;0,400;0,500;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>quote_of_the_day</h2>
+        <blockquote id="quote">loading..</blockquote>
+        <span id="author">loading....</span>
+        <div class="btn">
+            <button onclick="getquote(api_url)">new_quote</button>
+            <button onclick="tweet()"><img src="twitter.png">
+                tweet</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    background: linear-gradient(170deg, black, rgb(190, 186, 186));
+    background-attachment: fixed;
+}
+.app{
+    background: rgb(201, 200, 200);
+    width: 90%;
+    max-width: 580px;
+    margin: 110px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+h1{
+    font-weight: 500;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #ababab;
+    color: black;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+.quiz{
+    padding: 10px 0;
+}
+.quiz h2{
+    font-size: 1.3rem;
+    color: black;
+    font-weight: 500;
+}
+.ans{
+    background: white;
+    color: black;
+    font-weight: 450;
+    width: 48%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.ans:hover:not([disabled]){
+    background: #222;
+    color: white;
+}
+.ans:disabled{
+    cursor: no-drop;
+}
+#next{
+    background: rgb(81, 80, 80);
+    color: white;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+.yes{
+    background: rgb(23, 251, 111);
+}
+.boo{
+    color: whitesmoke;
+    background: rgb(230, 158, 158);
+}

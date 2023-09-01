@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #d4f88d;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+}
+.text_input{
+    display: flex;
+    border-bottom: 1px solid #0e0e0e;
+}
+.to_text{
+    border-radius: 0px;
+    border-left: 1px solid #070707;
+}
+textarea{
+    font-family: 'Ubuntu Mono', monospace;
+    height: 250px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    resize: none;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}::placeholder{
+    color: #979595;
+}
+.controls, li, .icons, i{
+    display: flex;
+    align-items: center;
+}
+.controls{
+    list-style: none;
+    justify-content: space-between;
+    padding: 12px;
+}
+.icons i{
+    width: 50px;
+    color: #5b9346;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-content: center;
+}
+.from .icons{
+    border-right: 1px solid #0a0a09;
+}
+.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #333430;
+}
+select{
+    color: #333;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    background: transparent;
+}
+.exchange{
+    color: rgb(26, 29, 26);
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.1s ease;
+}
+.controls i:active{
+    transform: scale(0.7);
+}
+button{
+    padding: 15px;
+    outline: 0;
+    border: 0;
+    color: #2c2929;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: rgb(234, 234, 42);
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+button:active{
+    transform: scale(0.8);
+}

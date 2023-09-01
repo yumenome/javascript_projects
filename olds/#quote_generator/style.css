@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    background: linear-gradient(170deg, #00A1F6, white);
+    background-attachment: fixed;
+}
+.container{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+h2{
+    font-size: 1.5rem;
+    color: #00A1F6;
+    margin-bottom: 30px;
+    position: relative;
+}
+blockquote{
+    font-size: 25px;
+    min-height: 100px;
+}
+blockquote::before, blockquote::after{
+    content: '"';
+}
+span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(121, 82, 157);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.btn{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: #a0a0ff;
+    color: white;
+    border-radius: 30px;
+    border: 0;
+    width: 130px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+img{
+    width: 20px;
+    margin-right: 5px;
+}
+button:nth-child(2){
+    border: 1px solid #333;
+    background: transparent;
+    color: #2f3a3f;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="calculator"> -->
+            <form class="calculator">
+                <input type="text" class="display" name="screen">
+                <div class="first">
+                    <input type="button" value="AC" onclick="screen.value = '' ">
+                    <input type="button" value="*" onclick="screen.value += '*' ">
+                    <input type="button" value="/" onclick="screen.value += '/' ">
+                    <input type="button" value="del" onclick="screen.value = screen.value.toString().slice(0,-1)">
+                    <!-- <button><img src="del.png" onclick="del()"></button> -->
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="screen.value += '7' ">
+                    <input type="button" value="8" onclick="screen.value += '8' ">
+                    <input type="button" value="9" onclick="screen.value += '9' ">
+                    <input type="button" value="+" onclick="screen.value += '+' " class="opreator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="screen.value += '4' ">
+                    <input type="button" value="5" onclick="screen.value += '5' ">
+                    <input type="button" value="6" onclick="screen.value += '6' ">
+                    <input type="button" value="-" onclick="screen.value += '-' " class="opreator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="screen.value += '1' ">
+                    <input type="button" value="2" onclick="screen.value += '2' ">
+                    <input type="button" value="3" onclick="screen.value += '3' ">
+                    <input type="button" value="." onclick="screen.value += '.' " class="opreator">
+                </div>
+                <div>
+                    <input type="button" value="=" class="equal" onclick="solve()">
+                    <input type="button" value="0" onclick="screen.value += '0' ">
+                    <input type="button" value="00" onclick="screen.value += '00' ">
+                    <input type="button" value="%" onclick="screen.value += '%' " class="opreator">
+                </div>
+            </form>
+        <!-- </div> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

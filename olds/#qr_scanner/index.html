@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+       <form action="#">
+            <input type="file" hidden accept="image/*">
+            <img src="test.png" class="test" style="overflow: hidden;">
+            <div class="content">
+                <img src="upload.png" class="todo">
+                <p>upload qr code to scan</p>
+            </div>
+       </form>
+
+       <div class="details">
+            <textarea spellcheck="false" ></textarea>
+            <div class="btn">
+                <button class="close">close</button>
+                <button class="copy">copy result</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

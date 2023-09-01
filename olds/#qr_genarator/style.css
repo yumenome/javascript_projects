@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    background: linear-gradient(170deg, #d84e4e, rgb(248, 194, 194));
+    background-attachment: fixed;
+}
+.container{
+    width: 400px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 10px;
+}
+p{
+    font-size: 600;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #333;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 10px;
+}
+button{
+    width: 100%;
+    height: 50px;
+    background: rgb(232, 125, 125);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+    color: white;
+}
+#img_box{
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s;
+}
+#img_box img{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+}
+#img_box.showit{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+}
+.error{
+    animation: shake 0.1s linear 9;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.qr_text, p, button{
+    transition: all 0.5s ease;
+}
+.noti_box{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 10px;
+}
+.pop_up{
+    margin: 7px;
+    width: 100%;
+    padding: 11px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background: rgb(236, 233, 226);
+    font-size: 18px;
+    position: relative;
+    transition: all 0.5s ease;
+    transform: translateX(100%);
+    animation: moveleft 0.5s linear forwards;
+}
+@keyframes moveleft{
+    100%{
+        transform: translateX(0);
+    }
+}
+.off{
+    opacity: 0;
+}
+.pop_up i{
+    width: 10px;
+    margin-right: 7px;
+}
+.pop_up::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #ddbf8d;
+    animation: prog 3s linear forwards;
+}
+@keyframes prog{
+    100%{
+        width: 0;
+    }
+}

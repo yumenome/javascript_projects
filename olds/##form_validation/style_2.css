@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+}
+body{
+    background: rgb(40, 234, 248);
+}
+h3{
+    text-align: center;    
+    margin: 10px auto;
+}
+btn-light{
+    margin-top: -10px;
+}
