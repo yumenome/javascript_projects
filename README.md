@@ -1,5 +1,4 @@
-# first_20_project
-these are my projects about onclick events, api fetch & etc
+these are;
 
 one ## form validation project with the beginning of php
 9 # api fetching projects 
